@@ -30,7 +30,7 @@ public class Robot extends TimedRobot {
   Orchestra orchestra;
   TalonFX[] motors = {new TalonFX(2), new TalonFX(3), new TalonFX(4), new TalonFX(5), new TalonFX(6), new TalonFX(7)};
   String [] songs = new String [] {
-    "song1.chrp"
+    "all-star.chrp"
   };
 
   Joystick left;
@@ -43,7 +43,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
    
-    ArrayList<TalonFX> instruments = new ArrayList<TalonFX> ();
+    ArrayList<TalonFX> instruments = new ArrayList<TalonFX>();
 
     for (int i = 0; i < motors.length; ++i) {
       instruments.add(motors[i]);
@@ -53,7 +53,6 @@ public class Robot extends TimedRobot {
     left = new Joystick(0);
 
     loadSong(0);
-
 
     SmartDashboard.putBoolean("Play", false);
 
@@ -105,7 +104,6 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
-
 
     boolean play = SmartDashboard.getBoolean("Play", false);
 
