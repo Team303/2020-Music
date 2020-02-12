@@ -29,7 +29,7 @@ public class Robot extends TimedRobot {
 
   Orchestra orchestra;
   TalonFX[] motors = { new TalonFX(2), new TalonFX(3), new TalonFX(4)}; //, new TalonFX(5), new TalonFX(6), new TalonFX(7) 
-  String[] songs = new String[] { "all-star.chrp", "Imperial-March.chrp", "Cantina-Band.chrp", "Theme-Song.chrp" };
+  String[] songs = new String[] { "all-star.chrp", "Imperial-March.chrp", "Cantina-Band.chrp", "Theme-Song.chrp", "Wii-Song.chrp" };
 
   Joystick left;
   int timeToPlaySong = 10;
